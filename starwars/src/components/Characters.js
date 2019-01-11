@@ -10,7 +10,12 @@ function Characters(props){
                 return(
                 <div key={char.created} className='character'>
                     <h2>{char.name}</h2>
-                    <p>Was born on {char.birth_year}</p>
+                    <p>
+                    {
+                        char.birth_year === 'unknown' ? `It appears that ${char.name} does not have a birth date` :
+                        char.gender === 'n/a' ? `Was created on ${char.birth_year} ` : `Was born on${char.birth_year}`
+                    } 
+                    </p>
                     <p>Currently {char.height} inches tall and has a mass of {char.weight}</p>
                 </div>
                 ) 
