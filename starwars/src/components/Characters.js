@@ -11,6 +11,7 @@ function Characters(props){
                 <div key={char.created} className='character'>
                     <h2>{char.name}</h2>
                     <p>Was born on {char.birth_year}</p>
+                    <p>Currently {char.height} inches tall and has a mass of {char.weight}</p>
                 </div>
                 ) 
             })
