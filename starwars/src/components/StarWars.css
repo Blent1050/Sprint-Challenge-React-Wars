@@ -1,12 +1,27 @@
 .characters-container{
     border:1px solid black;
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
+    justify-content: center;
 }
 .character{
-    border: 1px solid black;
     padding: 1rem;
     margin: 5px;
+    width: 25%;
+    height: 25%;
+    max-height: 150px;
+    min-width: 150px;
+    -webkit-box-shadow: 2px 6px 44px -10px rgba(0,0,0,0.67);
+    -moz-box-shadow: 2px 6px 44px -10px rgba(0,0,0,0.67);
+    box-shadow: 2px 6px 44px -10px rgba(0,0,0,0.67);
+    background-color: rgba(255, 255, 255, 0.568);
+}
+.character:hover{
+    -webkit-box-shadow: 2px 6px 98px 6px rgba(0,0,0,0.67);
+-moz-box-shadow: 2px 6px 98px 6px rgba(0,0,0,0.67);
+box-shadow: 2px 6px 98px 6px rgba(0,0,0,0.67);
 }
