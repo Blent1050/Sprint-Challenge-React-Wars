@@ -8,7 +8,7 @@ function Characters(props){
         {
             props.starwarsChars.map(char => {
                 return(
-                <div className='character'>
+                <div key={char.created} className='character'>
                     <h2>{char.name}</h2>
                     <p>Was born on {char.birth_year}</p>
                 </div>
